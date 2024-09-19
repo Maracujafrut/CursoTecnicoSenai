@@ -1,0 +1,27 @@
+using System;
+class HelloWorld {
+  static void Main() {
+    Console.WriteLine("|||Calculador de Imposto Salarial|||");
+    Console.WriteLine("Informe o salário do funcionário");
+    string sal = Console.ReadLine();
+    float salario = float.Parse(sal);
+    float imposto;
+    
+    if(salario<=3000)
+    {
+            
+            imposto = salario * 10 / 100;
+            Console.WriteLine($"O imposto do salario de {sal} é igual à {imposto}");
+            
+    }
+    else if(salario <= 6000)
+    {
+            imposto = salario * 15 / 100;
+            Console.WriteLine($"O imposto do salario de {sal} é igual à {imposto}");
+            
+    }
+    else if(salario > 6000)
+    {
+        imposto = salario * 20/ 100;
+        Console.WriteLine($"O Imposto do salário de {sal} é igual à {imposto}");
+        
